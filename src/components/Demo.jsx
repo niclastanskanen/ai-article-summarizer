@@ -43,6 +43,12 @@ const Demo = () => {
     setTimeout(() => setCopied(false), 3000);
   }
 
+  const handleCopySummary = () => {
+    setCopied(true)
+    navigator.clipboard.writeText(article.summary);
+    setTimeout(() => setCopied(false), 3000);
+  }
+
   return (
     <section className="mt-16 w-full max-w-xl">
       <div className="flex flex-col w-full gap-2">
@@ -109,10 +115,10 @@ const Demo = () => {
                     </p>
                     <div 
                       className='copy_btn mt-5'
-                      onClick={() => navigator.clipboard.writeText(article.summary)}
+                      onClick={() => handleCopySummary()}
                     >
                       <img 
-                        src={copy}
+                        src={copied === true ? tick : copy }
                         alt="copy_icon"
                         className="w-[40%] h-[40%] object-contain"
                       />
