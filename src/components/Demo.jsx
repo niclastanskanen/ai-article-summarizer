@@ -107,6 +107,16 @@ const Demo = () => {
                     <p className='font-inter font-medium text-sm text-gray-700'>
                       {article.summary}
                     </p>
+                    <div 
+                      className='copy_btn mt-5'
+                      onClick={() => navigator.clipboard.writeText(article.summary)}
+                    >
+                      <img 
+                        src={copy}
+                        alt="copy_icon"
+                        className="w-[40%] h-[40%] object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               )
