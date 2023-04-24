@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { logo } from '../assets';
 
 const Hero = () => {
@@ -20,7 +18,7 @@ const Hero = () => {
         <span className='orange_gradient'>OpenAI GPT-4</span>
       </h1>
       <h2 className='desc'>
-        Organize long articles into concise and clear summaries with Summize, an open-source article summarizer.
+        Organize long articles into concise and clear summaries with ClearyfAi.
       </h2>
     </header>
   );
