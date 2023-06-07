@@ -1,10 +1,7 @@
-import Hero from './components/Hero';
-import Demo from './components/Demo';
-
-import './App.css';
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
-import NavBar from './components/NavBar';
-import Landing from './components/Landing';
+
+import { Hero, Demo, NavBar, Landing } from './components';
+import './App.css';
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 

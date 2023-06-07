@@ -1,8 +1,8 @@
-
+import Hero from './Hero'
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <Hero />
   )
 }
 
